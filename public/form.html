@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Clarity - Financial Advisor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-2xl font-bold text-gray-800 text-center">Clash Clarity - Financial Planner</h2>
+        <p class="text-gray-600 text-center mt-2">Enter your details to get AI-powered financial advice:</p>
+
+        <!-- Form for User Input -->
+        <form id="financeForm" class="mt-4">
+            <label class="block text-gray-700">💰 Monthly Salary (₹):</label>
+            <input type="number" id="salary" class="w-full px-3 py-2 border rounded mt-1" required>
+
+            <label class="block text-gray-700 mt-3">🏠 Fixed Expenses (₹):</label>
+            <input type="number" id="fixedExpenses" class="w-full px-3 py-2 border rounded mt-1" required>
+
+            <label class="block text-gray-700 mt-3">🛍️ Variable Expenses (₹):</label>
+            <input type="number" id="variableExpenses" class="w-full px-3 py-2 border rounded mt-1" required>
+
+            <label class="block text-gray-700 mt-3">💾 Savings Goal (₹):</label>
+            <input type="number" id="savingsGoal" class="w-full px-3 py-2 border rounded mt-1" required>
+
+            <label class="block text-gray-700 mt-3">💳 Debt (₹):</label>
+            <input type="number" id="debt" class="w-full px-3 py-2 border rounded mt-1" required>
+
+            <button type="submit" class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                📊 Get Financial Advice
+            </button>
+        </form>
+
+        <!-- AI Response Section -->
+        <div id="responseSection" class="hidden mt-6 p-4 bg-gray-50 border rounded">
+            <h3 class="text-lg font-semibold text-gray-800">📢 AI Suggestion:</h3>
+            <p id="result" class="text-gray-600 mt-2">⏳ Waiting for response...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
